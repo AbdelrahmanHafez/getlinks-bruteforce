@@ -1,5 +1,7 @@
 const rp = require('request-promise');
 
+getPassword('inhrjad', 1000).catch(console.error);
+
 async function getPassword (id, startFrom) {
   let correctPassword;
 
@@ -55,5 +57,3 @@ function addZerosToNumber (num) {
 function sleep (ms) {
   return new Promise((resolve, reject) => setTimeout(() => resolve(), ms));
 }
-
-getPassword('inhrjad', 1000).catch(console.error);
